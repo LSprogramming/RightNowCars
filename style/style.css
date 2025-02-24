@@ -203,11 +203,150 @@ img {
       justify-content: space-around;
       grid-template-columns: 3;
       grid-template-rows: 2;
-      
+    
 }
-
 .card-img-top {
     object-fit: cover;
-    height: 200px; /* Ajusta esta altura según lo que necesites */
+    height: 200px;
+}
+  
+
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card {
+    width: 18rem; /* Definir el tamaño de todas las tarjetas */
 }
 
+  
+   /* Estilos básicos para el diseño */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu {
+    padding-left: 0;
+}
+
+.intro, .informacion {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-container div {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.logomail, .logowhatsapp, .logonewsletter {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-container div {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container iframe {
+        height: 200px;
+    }
+}
+
+  
