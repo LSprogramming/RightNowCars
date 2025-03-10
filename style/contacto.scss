@@ -1,0 +1,96 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    input {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    
+        &:hover {
+            background-color: #555;
+        }
+    }
+}
+
+.logomail, .logowhatsapp, .logonewsletter {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.grid-container-contacto {
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas */
+    align-items: space-around;
+    grid-gap: 5px; /* Espacio entre los elementos */
+    grid-template-areas: 
+        "correo mapa"
+        "telefono mapa"
+        "newsletter -"; /* Mapa en la primera columna, correo y teléfono en la segunda */
+}
+
+.gridareauno {
+    grid-area: mapa;
+    background-color: #f0f0f0; /* Fondo para visualización */
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.gridareados {
+    grid-area: correo;
+    background-color: #e1e1e1; /* Fondo para visualización */
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.gridareatres {
+    grid-area: telefono;
+    background-color: #d1d1d1; /* Fondo para visualización */
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.gridareacuatro {
+    grid-area: newsletter;
+    background-color: #c1c1c1; /* Fondo para visualización */
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .grid-container-contacto {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-container-contacto div {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container-contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container-contacto iframe {
+        height: 200px;
+    }
+}

@@ -1,1 +1,182 @@
-$primary-color: #349
+@import "contacto";
+
+$hover-color: #054d84;
+$background-color: #f4f4f4;
+
+/* Reseteamos márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+}
+
+/* Menú de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: $hover-color;
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.intro {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.informacion {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+.mail{
+    font-family: 'Times New Roman', Times, serif;color: #f4f4f4;
+    background-color: #555;
+}
+
+.menu{
+    justify-content: space-between;
+}
+
+.imgautoblanco{
+    display: flex;
+    width: 100vh;
+    height: 350px;
+    align-items: flex-start;
+     
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pmail{
+    font-family: 'Times New Roman', Times, serif; color: #f4f4f4;
+    background-color: #555;
+    display: flex;
+    width: 30%;
+    border-radius: 15px;
+    justify-content: center;
+    border-color: solid #054d84 
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.containeruno {
+      justify-content: space-around;
+      grid-template-columns: 3;
+      grid-template-rows: 2;
+    
+}
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+  
+
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card {
+    width: 18rem; /* Definir el tamaño de todas las tarjetas */
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu {
+    padding-left: 0;
+}
+
+.intro, .informacion {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+  
